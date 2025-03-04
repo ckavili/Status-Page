@@ -51,7 +51,7 @@ jobs:
         id: metrics
         env:
           SOURCES: |
-            MaaS->${{ secrets.MAAS}}
+            MaaS->${{ secrets.MAAS }}
           GITHUB_TOKEN: ${{ github.token }}
           JOB_NAME: ${{ github.workflow }}
           ARTIFACT_NAME: ${{ env.ARTIFACT_NAME }}
